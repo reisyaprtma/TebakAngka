@@ -62,7 +62,7 @@ h1{
     font-size: 60;
     margin-top: 12vh;
     color: rgb(255, 255, 255);
-    text-shadow:1px 5px 5px #0000004b;
+    text-shadow:1px 5px 5px #21d6d6;
 }
 a{
     
@@ -75,7 +75,7 @@ a{
     margin: 15px;
     color: rgb(224, 42, 42);
     text-decoration: none;
-    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.322);
+    box-shadow: 2px 4px 4px rgb(255, 255, 255);
     transition: all ease-out .4s;
 }
 a:hover{
@@ -130,6 +130,7 @@ a:hover{
     background-color: transparent;
 }
 .kotakisi{
+    margin-top: 50px;
     animation: enter 1s ease-in;
     border-radius: 20px;
     display: flex;
@@ -138,8 +139,8 @@ a:hover{
     align-items: center;
     width: 400px;
     height: 350px;
-    background-color: white;
-    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.384);
+    /* background-color: white;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.384); */
 }
 #angkatebak{
     display: flex;
@@ -182,7 +183,7 @@ a:hover{
     border-radius: 20px;
     color: white;
     margin: 10px;
-    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.418);
+    box-shadow: 1px 3px 3px rgb(255, 255, 255);
     transition: all ease-out .4s;
 }
 #tebak:hover{

@@ -36,7 +36,7 @@ function tebak() {
     }
     if (i==0) {
         document.getElementById("headform").innerHTML=`Nyawa anda habis dek`
-        document.getElementById("angkaasli").innerHTML=`Angka yang harus anda tebak adalah : ${n}`
+        document.getElementById("angkaasli").innerHTML=`Angka yang benar : ${n}`
         document.getElementById("nyawa").style.display="none"
         document.getElementById("input").style.display="none"
         document.getElementById("tebak").style.display="none"
