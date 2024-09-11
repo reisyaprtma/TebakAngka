@@ -1,0 +1,34 @@
+<html id="html">
+
+<head>
+    <title>TEBAK ANGKA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Potta+One&family=RocknRoll+One&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div class="video">
+        <video id="background-video" autoplay loop muted
+            poster="squares_-_81094 (720p).mp4">
+            <source src="squares_-_81094 (720p).mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="isi">
+        <div class="kotakisi">
+            <form onsubmit="return false" class="b" id="angkatebak">
+                <p id="headform">Masukkan Tebakan Anda</p>
+                <p id="rentang"></p>
+                <input type="number" id="input" autocomplete="off"/>
+            </form>
+            <button id="tebak">TEBAK</button>
+            <a id="ulang" href="index.html">PLAY AGAIN</a>
+            <p id="nyawa"></p>
+            <p id="angkaasli"></p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>

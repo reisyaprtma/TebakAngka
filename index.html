@@ -1,0 +1,45 @@
+<html id="html">
+
+<head>
+    <title>TEBAK ANGKA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Potta+One&family=RocknRoll+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="video">
+        <video id="background-video" autoplay loop muted
+            poster="squares_-_81094 (720p).mp4">
+            <source src="squares_-_81094 (720p).mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="isi">
+        <h1>TEBAK ANGKA</h1>
+        <a id="tombol" href="main.html">START GAME</a>
+        <div class="diffbox">
+            <h1 class="hdiff">Difficulty</h1>
+            <form id="form" name="form" onsubmit="return false" class="gender">
+                <select name="" id="difficulty">
+                    <option value="easy" id="easy">Easy</option>
+                    <option value="normal" id="normal">Normal</option>
+                    <option value="hard" id="hard">Hard</option>
+                    <option value="dewa" id="dewa">Dewa</option>
+                </select>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <li class="fli">
+            CONTACT
+        </li>
+        <li class="fli">
+            Email : @reisyaprtma.gmail.com
+        </li>
+    </div>
+    <script src="script.js"></script>
+</body>

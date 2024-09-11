@@ -1,0 +1,233 @@
+*,
+html{
+    margin: 0px;
+    padding: 0px;
+}
+@keyframes enter{
+    from{
+        opacity: 0;
+        transform: scale(0)
+    }
+    to{
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+@keyframes down{
+    from{
+        opacity: 0;
+        transform: translateY(-30px)
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+@keyframes up{
+    from{
+        opacity: 0;
+        transform: translateY(30px)
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+@-webkit-keyframes glow {
+    from {
+      color: rgb(224, 42, 42);
+    }
+    to {
+      color: rgb(240, 236, 46);
+    }
+  }
+  @-webkit-keyframes glow2 {
+    from {
+      color: rgb(42, 60, 224);
+    }
+    to {
+        color: rgb(224, 42, 42);
+    }
+  }
+.isi{
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    animation: down 1s ease-in;
+    font-family: 'montserrat';
+    font-size: 60;
+    margin-top: 12vh;
+    color: rgb(255, 255, 255);
+    text-shadow:1px 5px 5px #0000004b;
+}
+a{
+    
+    animation: glow 2s ease  infinite alternate-reverse;
+    padding: 15px ;
+    border-radius: 30px;
+    background-color: white;
+    font-family: 'montserrat';
+    font-size: 25;
+    margin: 15px;
+    color: rgb(224, 42, 42);
+    text-decoration: none;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.322);
+    transition: all ease-out .4s;
+}
+a:hover{
+    transform: scale(1.15);
+}
+.hdiff{
+    animation: up 1s ease-in;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    margin-top: 0;
+    margin: 10px;
+}
+.diffbox{
+    animation: up 1s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12pvh;
+}
+#difficulty{
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    animation: glow2 2s ease  infinite alternate-reverse;
+    outline: none;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#easy{
+    color: rgb(51, 202, 51);
+}
+#normal{
+    color: rgb(238, 235, 55);
+}
+#hard{
+    color: rgb(235, 51, 51);
+}
+#dewa{
+    color: rgb(0, 0, 0);
+}
+#background-video{
+    z-index: -1;
+    position: absolute;
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+}
+.isi{
+    background-color: transparent;
+}
+.kotakisi{
+    animation: enter 1s ease-in;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 350px;
+    background-color: white;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.384);
+}
+#angkatebak{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+#headform{
+    width: 350px;
+    text-align: center;
+    font-family: "montserrat";
+    font-size: larger;
+    font-weight: bold;
+    color: rgb(51, 51, 236);
+    margin-bottom: 5px ;
+}
+#rentang{
+    font-family: "montserrat";
+    font-size: medium;
+    color: rgb(131, 51, 236);
+    margin-bottom: 10px ;
+}
+#input{
+    border-color: rgba(131, 51, 236, 0.301);
+    text-align: center;
+    height: 75px;
+    width: 75px;
+    border-radius: 75px;
+    font-size: larger;
+}
+#input:focus{
+    outline-color: rgb(131, 51, 236);;
+}
+#tebak{
+    outline: none;
+    border: none;
+    padding: 15px;
+    background: linear-gradient(to right, rgb(70, 70, 240),rgb(153, 88, 238));
+    border-radius: 20px;
+    color: white;
+    margin: 10px;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.418);
+    transition: all ease-out .4s;
+}
+#tebak:hover{
+    transform: translateY(-5px);
+}
+#angkaasli{
+    background: -webkit-linear-gradient( rgb(84, 240, 70),rgb(238, 190, 88));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "montserrat";
+      font-size: large;
+}
+#nyawa{
+    background: -webkit-linear-gradient( rgb(70, 70, 240),rgb(153, 88, 238));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "montserrat";
+    font-size: large;
+}
+.footer{
+    /* background: linear-gradient(to right,#834d9b,#d04ed6); */
+    box-shadow:  0px -5px 5px #0000001f;  
+    background-color: white;
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+.fli{
+    font-family: "montserrat";
+    color: rgb(0, 0, 0);
+    margin: 3px;
+    font-size: small;
+}
+@media only screen and (max-width: 700px){
+    h1{
+        font-size: 50;
+    }
+    .kotakisi{
+        width: 300px;
+    }
+    #headform{
+        width: auto;
+        font-size: medium;
+    }
+}
